@@ -8,5 +8,6 @@ test_signal*
 !test_signal?.c
 
 build
+!CMakeLists.txt
 
 
