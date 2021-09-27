@@ -6,4 +6,4 @@ test_signal*
 #test_signal3
 #test_signal4
 #test_signal5
-!test_signal*.c
+!test_signal?.c
