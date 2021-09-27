@@ -2,5 +2,11 @@
 *.out
 *.txt
 
+!test_*
+
 test_signal*
 !test_signal?.c
+
+build
+
+
