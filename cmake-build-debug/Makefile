@@ -131,84 +131,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_sh2
+# Target rules for targets named mytalk_client
 
 # Build rule for target.
-test_sh2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_sh2
-.PHONY : test_sh2
+mytalk_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mytalk_client
+.PHONY : mytalk_client
 
 # fast build rule for target.
-test_sh2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sh2.dir/build.make CMakeFiles/test_sh2.dir/build
-.PHONY : test_sh2/fast
+mytalk_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytalk_client.dir/build.make CMakeFiles/mytalk_client.dir/build
+.PHONY : mytalk_client/fast
 
 #=============================================================================
-# Target rules for targets named test_sh
+# Target rules for targets named mytalk_server
 
 # Build rule for target.
-test_sh: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_sh
-.PHONY : test_sh
+mytalk_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mytalk_server
+.PHONY : mytalk_server
 
 # fast build rule for target.
-test_sh/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sh.dir/build.make CMakeFiles/test_sh.dir/build
-.PHONY : test_sh/fast
+mytalk_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytalk_server.dir/build.make CMakeFiles/mytalk_server.dir/build
+.PHONY : mytalk_server/fast
 
-io_reuse/select_client/select_client.o: io_reuse/select_client/select_client.cpp.o
+io_reuse/mytalk/mytalk_client/mytalk_client.o: io_reuse/mytalk/mytalk_client/mytalk_client.cpp.o
 
-.PHONY : io_reuse/select_client/select_client.o
-
-# target to build an object file
-io_reuse/select_client/select_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sh2.dir/build.make CMakeFiles/test_sh2.dir/io_reuse/select_client/select_client.cpp.o
-.PHONY : io_reuse/select_client/select_client.cpp.o
-
-io_reuse/select_client/select_client.i: io_reuse/select_client/select_client.cpp.i
-
-.PHONY : io_reuse/select_client/select_client.i
-
-# target to preprocess a source file
-io_reuse/select_client/select_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sh2.dir/build.make CMakeFiles/test_sh2.dir/io_reuse/select_client/select_client.cpp.i
-.PHONY : io_reuse/select_client/select_client.cpp.i
-
-io_reuse/select_client/select_client.s: io_reuse/select_client/select_client.cpp.s
-
-.PHONY : io_reuse/select_client/select_client.s
-
-# target to generate assembly for a file
-io_reuse/select_client/select_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sh2.dir/build.make CMakeFiles/test_sh2.dir/io_reuse/select_client/select_client.cpp.s
-.PHONY : io_reuse/select_client/select_client.cpp.s
-
-io_reuse/select_server/select_server.o: io_reuse/select_server/select_server.cpp.o
-
-.PHONY : io_reuse/select_server/select_server.o
+.PHONY : io_reuse/mytalk/mytalk_client/mytalk_client.o
 
 # target to build an object file
-io_reuse/select_server/select_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sh.dir/build.make CMakeFiles/test_sh.dir/io_reuse/select_server/select_server.cpp.o
-.PHONY : io_reuse/select_server/select_server.cpp.o
+io_reuse/mytalk/mytalk_client/mytalk_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytalk_client.dir/build.make CMakeFiles/mytalk_client.dir/io_reuse/mytalk/mytalk_client/mytalk_client.cpp.o
+.PHONY : io_reuse/mytalk/mytalk_client/mytalk_client.cpp.o
 
-io_reuse/select_server/select_server.i: io_reuse/select_server/select_server.cpp.i
+io_reuse/mytalk/mytalk_client/mytalk_client.i: io_reuse/mytalk/mytalk_client/mytalk_client.cpp.i
 
-.PHONY : io_reuse/select_server/select_server.i
+.PHONY : io_reuse/mytalk/mytalk_client/mytalk_client.i
 
 # target to preprocess a source file
-io_reuse/select_server/select_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sh.dir/build.make CMakeFiles/test_sh.dir/io_reuse/select_server/select_server.cpp.i
-.PHONY : io_reuse/select_server/select_server.cpp.i
+io_reuse/mytalk/mytalk_client/mytalk_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytalk_client.dir/build.make CMakeFiles/mytalk_client.dir/io_reuse/mytalk/mytalk_client/mytalk_client.cpp.i
+.PHONY : io_reuse/mytalk/mytalk_client/mytalk_client.cpp.i
 
-io_reuse/select_server/select_server.s: io_reuse/select_server/select_server.cpp.s
+io_reuse/mytalk/mytalk_client/mytalk_client.s: io_reuse/mytalk/mytalk_client/mytalk_client.cpp.s
 
-.PHONY : io_reuse/select_server/select_server.s
+.PHONY : io_reuse/mytalk/mytalk_client/mytalk_client.s
 
 # target to generate assembly for a file
-io_reuse/select_server/select_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_sh.dir/build.make CMakeFiles/test_sh.dir/io_reuse/select_server/select_server.cpp.s
-.PHONY : io_reuse/select_server/select_server.cpp.s
+io_reuse/mytalk/mytalk_client/mytalk_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytalk_client.dir/build.make CMakeFiles/mytalk_client.dir/io_reuse/mytalk/mytalk_client/mytalk_client.cpp.s
+.PHONY : io_reuse/mytalk/mytalk_client/mytalk_client.cpp.s
+
+io_reuse/mytalk/mytalk_server/mytalk_server.o: io_reuse/mytalk/mytalk_server/mytalk_server.cpp.o
+
+.PHONY : io_reuse/mytalk/mytalk_server/mytalk_server.o
+
+# target to build an object file
+io_reuse/mytalk/mytalk_server/mytalk_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytalk_server.dir/build.make CMakeFiles/mytalk_server.dir/io_reuse/mytalk/mytalk_server/mytalk_server.cpp.o
+.PHONY : io_reuse/mytalk/mytalk_server/mytalk_server.cpp.o
+
+io_reuse/mytalk/mytalk_server/mytalk_server.i: io_reuse/mytalk/mytalk_server/mytalk_server.cpp.i
+
+.PHONY : io_reuse/mytalk/mytalk_server/mytalk_server.i
+
+# target to preprocess a source file
+io_reuse/mytalk/mytalk_server/mytalk_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytalk_server.dir/build.make CMakeFiles/mytalk_server.dir/io_reuse/mytalk/mytalk_server/mytalk_server.cpp.i
+.PHONY : io_reuse/mytalk/mytalk_server/mytalk_server.cpp.i
+
+io_reuse/mytalk/mytalk_server/mytalk_server.s: io_reuse/mytalk/mytalk_server/mytalk_server.cpp.s
+
+.PHONY : io_reuse/mytalk/mytalk_server/mytalk_server.s
+
+# target to generate assembly for a file
+io_reuse/mytalk/mytalk_server/mytalk_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mytalk_server.dir/build.make CMakeFiles/mytalk_server.dir/io_reuse/mytalk/mytalk_server/mytalk_server.cpp.s
+.PHONY : io_reuse/mytalk/mytalk_server/mytalk_server.cpp.s
 
 # Help Target
 help:
@@ -218,14 +218,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test_sh"
-	@echo "... test_sh2"
-	@echo "... io_reuse/select_client/select_client.o"
-	@echo "... io_reuse/select_client/select_client.i"
-	@echo "... io_reuse/select_client/select_client.s"
-	@echo "... io_reuse/select_server/select_server.o"
-	@echo "... io_reuse/select_server/select_server.i"
-	@echo "... io_reuse/select_server/select_server.s"
+	@echo "... mytalk_client"
+	@echo "... mytalk_server"
+	@echo "... io_reuse/mytalk/mytalk_client/mytalk_client.o"
+	@echo "... io_reuse/mytalk/mytalk_client/mytalk_client.i"
+	@echo "... io_reuse/mytalk/mytalk_client/mytalk_client.s"
+	@echo "... io_reuse/mytalk/mytalk_server/mytalk_server.o"
+	@echo "... io_reuse/mytalk/mytalk_server/mytalk_server.i"
+	@echo "... io_reuse/mytalk/mytalk_server/mytalk_server.s"
 .PHONY : help
 
 
