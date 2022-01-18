@@ -77,7 +77,7 @@ void* worker(void *arg) {
             printf("thread %u back from sleep\n", pid);
         }
     }
-    //printf("end thread %u receiving data on fd: %d\n", pid, sockfd);
+    printf("end thread %u receiving data on fd: %d\n", pid, sockfd);
 
 }
 
