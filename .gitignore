@@ -9,5 +9,6 @@ test_signal*
 
 build
 !CMakeLists.txt
+Makefile
 
 

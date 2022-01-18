@@ -17,7 +17,7 @@ int main()
     fd_set readfds, testfds;
     server_sockfd = socket(AF_INET, SOCK_STREAM, 0);//建立服务器端socket
     server_address.sin_family = AF_INET;
-    server_address.sin_addr.s_addr = htonl(INADDR_ANY);
+    server_address.sin_addr.s_addr = htonl(INADDR_ANY); // FIXME:INADDR_ANY可以绑定到多个网卡上
     server_address.sin_port = htons(8888);
     server_len = sizeof(server_address);
     bind(server_sockfd, (struct sockaddr *)&server_address, server_len);
