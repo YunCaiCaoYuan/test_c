@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
     int udpfd = socket(PF_INET, SOCK_DGRAM, 0);
     assert(udpfd >= 0);
 
-    ret = bind(udpfd, (struct sockaddr *) &address, sizeof(address));
+    ret = bind(udpfd, (struct sockaddr *) &address, sizeof(address)); // 绑定指定类型的套接字和地址
     assert(ret != -1);
 
     epoll_event events[MAX_EVENT_NUMBER];
