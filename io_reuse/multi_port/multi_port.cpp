@@ -102,6 +102,7 @@ int main(int argc, char *argv[]) {
                 ret = recvfrom(udpfd, buf, UDP_BUFFER_SIZE - 1, 0, (struct sockaddr *) &client_address,
                                &client_addrlength);
                 if (ret > 0) {
+                    printf("udp recv ok and send\n");
                     sendto(udpfd, buf, UDP_BUFFER_SIZE - 1, 0, (struct sockaddr *) &client_address, client_addrlength);
                 }
             } else if (events[i].events & EPOLLIN) {
