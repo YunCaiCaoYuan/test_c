@@ -56,6 +56,13 @@ int main(int argc, char *argv[]) {
     ret = listen(listenfd, 5);
     assert(ret != -1);
 
+    int reuseaddr = 1;
+    if (-1 == setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, &reuseaddr, sizeof(reuseaddr)))
+    {
+        fprintf(stderr, "setsockopt: %d, %s\n", errno, strerror(errno));
+        exit(1);
+    }
+
     bzero(&address, sizeof(address));
     address.sin_family = AF_INET;
     inet_pton(AF_INET, ip, &address.sin_addr);
