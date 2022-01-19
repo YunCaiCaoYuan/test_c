@@ -17,6 +17,7 @@ using namespace std;
 #define BUFSIZE 10
 #define CLIENTSIZE 1
 
+// fixme：找不到POLLRDHUP， MacOS不支持
 
 int createSocket()
 {
@@ -88,7 +89,7 @@ int main()
         for (int i = 0; i < conncount + 1; i++)
         {
             // 客户端关闭，或者错误。错误的原因是由于客户端关闭导致的，这里一并处理
-            if ((fds[i].revents & POLLHUP) || (fds[i].revents & POLLERR))// fixme：找不到POLLRDHUP
+            if ((fds[i].revents & POLLHUP) || (fds[i].revents & POLLERR))
             {
                 int fd = fds[i].fd;
                 fds[i] = fds[conncount];
