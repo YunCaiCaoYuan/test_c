@@ -110,8 +110,10 @@ int main(int argc, char *argv[]) {
                         close(sockfd);
                         break;
                     } else if (ret == 0) {
+                        printf("close sockfd\n");
                         close(sockfd);
                     } else {
+                        printf("recv ok and send\n");
                         send(sockfd, buf, ret, 0);
                     }
                 }
