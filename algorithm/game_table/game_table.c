@@ -31,7 +31,22 @@ int **GameTable(int k) {
 
 int main() {
     int **A = GameTable(3);
-    printf("A:%p\n", A);
-
+    for (int i=1;i<=pow(2,3); i++)
+    {
+        for (int j=1; j<= pow(2,3); j++)
+            printf("%d ", A[i][j]);
+        printf("\n");
+    }
     return 0;
 }
+
+/*
+1 2 3 4 5 6 7 8
+2 1 4 3 6 5 8 7
+3 4 1 2 7 8 5 6
+4 3 2 1 8 7 6 5
+5 6 7 8 1 2 3 4
+6 5 8 7 2 1 4 3
+7 8 5 6 3 4 1 2
+8 7 6 5 4 3 2 1
+*/
