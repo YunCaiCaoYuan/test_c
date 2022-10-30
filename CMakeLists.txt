@@ -19,5 +19,8 @@ PROJECT(test_c)
 #ADD_EXECUTABLE(mytalk_client ${SRC_LIST2})
 
 
-AUX_SOURCE_DIRECTORY(algorithm/game_table SRC_LIST2)
-ADD_EXECUTABLE(game_table ${SRC_LIST2})
+#AUX_SOURCE_DIRECTORY(algorithm/game_table SRC_LIST2)
+#ADD_EXECUTABLE(game_table ${SRC_LIST2})
+
+AUX_SOURCE_DIRECTORY(algorithm/matrix_chain_order SRC_LIST2)
+ADD_EXECUTABLE(matrix_chain_order ${SRC_LIST2})
