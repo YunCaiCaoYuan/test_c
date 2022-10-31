@@ -13,10 +13,11 @@ int **Matrix_Chain_Order(int *p, int Length) {
     }
     for(i=1;i<Multip_times;i++)
         m[i][i]=0;
+
     int l;
     for(l=2;l<=Multip_times;l++){
         for(i=1;i<=Multip_times-l+1;i++){
-            int j =i+l+1;
+            int j =i+l-1;
             m[i][j]=INT_MAX;
             int k;
             for(k=i;k<j;k++){
