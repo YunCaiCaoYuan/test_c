@@ -28,5 +28,11 @@ PROJECT(test_c)
 #AUX_SOURCE_DIRECTORY(algorithm/matrix_chain_order2 SRC_LIST2)
 #ADD_EXECUTABLE(matrix_chain_order2 ${SRC_LIST2})
 
-AUX_SOURCE_DIRECTORY(algorithm/multi_machine_schedule SRC_LIST2)
-ADD_EXECUTABLE(multi_machine_schedule ${SRC_LIST2})
+#AUX_SOURCE_DIRECTORY(algorithm/multi_machine_schedule SRC_LIST2)
+#ADD_EXECUTABLE(multi_machine_schedule ${SRC_LIST2})
+
+AUX_SOURCE_DIRECTORY(algorithm/stack_sort SRC_LIST2)
+ADD_EXECUTABLE(stack_sort ${SRC_LIST2})
+
+#AUX_SOURCE_DIRECTORY(algorithm/stack_sort2 SRC_LIST2)
+#ADD_EXECUTABLE(stack_sort ${SRC_LIST2})
