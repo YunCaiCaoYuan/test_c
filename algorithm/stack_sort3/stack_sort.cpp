@@ -42,7 +42,7 @@ void SortFF(vector<int> &nums, int n) {
         swap(nums[0], nums[pos]);
         pos -= 1;
         FF(nums, 0, pos);
-//        printArr(nums);
+        printArr(nums);
     }
 }
 // 6 2 1 4
