@@ -37,5 +37,8 @@ PROJECT(test_c)
 #AUX_SOURCE_DIRECTORY(algorithm/stack_sort2 SRC_LIST2)
 #ADD_EXECUTABLE(stack_sort ${SRC_LIST2})
 
-AUX_SOURCE_DIRECTORY(algorithm/stack_sort3 SRC_LIST2)
-ADD_EXECUTABLE(stack_sort ${SRC_LIST2})
+#AUX_SOURCE_DIRECTORY(algorithm/stack_sort3 SRC_LIST2)
+#ADD_EXECUTABLE(stack_sort ${SRC_LIST2})
+
+AUX_SOURCE_DIRECTORY(algorithm/solve_n_queens SRC_LIST2)
+ADD_EXECUTABLE(solve_n_queens ${SRC_LIST2})
