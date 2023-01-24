@@ -46,5 +46,8 @@ PROJECT(test_c)
 #AUX_SOURCE_DIRECTORY(algorithm/solve_sudoku SRC_LIST2)
 #ADD_EXECUTABLE(solve_sudoku ${SRC_LIST2})
 
-AUX_SOURCE_DIRECTORY(algorithm/trie SRC_LIST2)
-ADD_EXECUTABLE(trie ${SRC_LIST2})
+#AUX_SOURCE_DIRECTORY(algorithm/trie SRC_LIST2)
+#ADD_EXECUTABLE(trie ${SRC_LIST2})
+
+AUX_SOURCE_DIRECTORY(algorithm/find_words SRC_LIST2)
+ADD_EXECUTABLE(find_words ${SRC_LIST2})
