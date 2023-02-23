@@ -19,6 +19,16 @@ int n = 6; // 代表点数
 int v0 = 0;
 int v,w;
 
+void printArr() {
+    for (int i=0; i<10; i++) {
+        for (int j=0; j<10;j++) {
+            printf("%d ", p[i][j]);
+        }
+        printf("\n");
+    }
+//    printf("\n\n");
+}
+
 // 最短路径（实质是动态规划）
 void ShortestPath_DIJ() {
     for (v=0; v<n;v++)
@@ -33,6 +43,8 @@ void ShortestPath_DIJ() {
             p[v][v]=1;
         }
     }
+//    printArr();
+
     D[v0]=0;
     final[v0]=1;
     for (int i=1; i<n; i++)
@@ -53,12 +65,14 @@ void ShortestPath_DIJ() {
             if (!final[w] && (min+arcs[v][w]<D[w]))
             {
                 D[w]=min+arcs[v][w];
-                p[w][w]=1;
+                p[w][v]=1;
             }
         }
     }
 
 }
+
+
 
 // 输出最短路径？？？
 
@@ -68,6 +82,7 @@ int main() {
     {
         printf("D[%d]=%d\n", i, D[i]);
     }
+    printArr();
     return 0;
 }
 

@@ -52,5 +52,8 @@ PROJECT(test_c)
 #AUX_SOURCE_DIRECTORY(algorithm/find_words SRC_LIST2)
 #ADD_EXECUTABLE(find_words ${SRC_LIST2})
 
-AUX_SOURCE_DIRECTORY(algorithm/dijkstra SRC_LIST2)
-ADD_EXECUTABLE(dijkstra ${SRC_LIST2})
+AUX_SOURCE_DIRECTORY(algorithm/dijkstra SRC_LIST)
+ADD_EXECUTABLE(dijkstra ${SRC_LIST})
+
+#AUX_SOURCE_DIRECTORY(algorithm/dijkstra2 SRC_LIST)
+#ADD_EXECUTABLE(dijkstra2 ${SRC_LIST})
