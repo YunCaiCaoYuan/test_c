@@ -4,7 +4,8 @@
 using namespace std;
 /**
  *作者：Dmego
- *时间：2016-12-12
+ *时间：2016
+ * 3 -12-12
  */
 #define MAX 1000000 //表示极大值∞
 #define max 10
@@ -18,6 +19,14 @@ typedef struct
     int vexnum, arcnum; //图当前点数和边数
 
 }AMGraph;
+
+void printPath() {
+    for (int i=0; i<max; i++) {
+        cout << Path[i] << " " ;
+    }
+    cout << endl;
+}
+
 //利用迪杰斯特拉算法求最短路径
 void ShortestPath_DIJ(AMGraph &G, int v0)
 {//使用迪杰斯特拉算法求有向网G中的V0 定点到其余顶点的最短路径
@@ -56,6 +65,7 @@ void ShortestPath_DIJ(AMGraph &G, int v0)
             }
         }
     }
+    printPath();
 }
 //背景函数
 void backGround()
@@ -209,9 +219,9 @@ int main()
             while (temp!= -1)
             {
                 flag[m++] = temp;
-                temp1 = temp ;
-                temp2 = Path[temp1];
-                temp = temp2;
+//                temp1 = temp ;
+                temp = Path[temp];
+//                temp = temp2;
             }
             for (int i = m-1; i >= 0; i--)
             {
