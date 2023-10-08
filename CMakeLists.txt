@@ -40,20 +40,5 @@ PROJECT(test_c)
 #AUX_SOURCE_DIRECTORY(algorithm/stack_sort3 SRC_LIST2)
 #ADD_EXECUTABLE(stack_sort ${SRC_LIST2})
 
-#AUX_SOURCE_DIRECTORY(algorithm/solve_n_queens SRC_LIST2)
-#ADD_EXECUTABLE(solve_n_queens ${SRC_LIST2})
-
-#AUX_SOURCE_DIRECTORY(algorithm/solve_sudoku SRC_LIST2)
-#ADD_EXECUTABLE(solve_sudoku ${SRC_LIST2})
-
-#AUX_SOURCE_DIRECTORY(algorithm/trie SRC_LIST2)
-#ADD_EXECUTABLE(trie ${SRC_LIST2})
-
-#AUX_SOURCE_DIRECTORY(algorithm/find_words SRC_LIST2)
-#ADD_EXECUTABLE(find_words ${SRC_LIST2})
-
-#AUX_SOURCE_DIRECTORY(algorithm/dijkstra SRC_LIST)
-#ADD_EXECUTABLE(dijkstra ${SRC_LIST})
-
-AUX_SOURCE_DIRECTORY(algorithm/dijkstra2 SRC_LIST)
-ADD_EXECUTABLE(dijkstra2 ${SRC_LIST})
+AUX_SOURCE_DIRECTORY(test/sizeof SRC_LIST2)
+ADD_EXECUTABLE(sizeof ${SRC_LIST2})
