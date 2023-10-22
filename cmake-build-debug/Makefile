@@ -116,41 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named matrix_chain_order2
+# Target rules for targets named dijkstra2
 
 # Build rule for target.
-matrix_chain_order2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 matrix_chain_order2
-.PHONY : matrix_chain_order2
+dijkstra2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 dijkstra2
+.PHONY : dijkstra2
 
 # fast build rule for target.
-matrix_chain_order2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\matrix_chain_order2.dir\build.make CMakeFiles/matrix_chain_order2.dir/build
-.PHONY : matrix_chain_order2/fast
+dijkstra2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dijkstra2.dir\build.make CMakeFiles/dijkstra2.dir/build
+.PHONY : dijkstra2/fast
 
-algorithm/matrix_chain_order2/matrix_chain_order2.obj: algorithm/matrix_chain_order2/matrix_chain_order2.c.obj
-.PHONY : algorithm/matrix_chain_order2/matrix_chain_order2.obj
+algorithm/dijkstra2/dijkstra.obj: algorithm/dijkstra2/dijkstra.cpp.obj
+.PHONY : algorithm/dijkstra2/dijkstra.obj
 
 # target to build an object file
-algorithm/matrix_chain_order2/matrix_chain_order2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\matrix_chain_order2.dir\build.make CMakeFiles/matrix_chain_order2.dir/algorithm/matrix_chain_order2/matrix_chain_order2.c.obj
-.PHONY : algorithm/matrix_chain_order2/matrix_chain_order2.c.obj
+algorithm/dijkstra2/dijkstra.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dijkstra2.dir\build.make CMakeFiles/dijkstra2.dir/algorithm/dijkstra2/dijkstra.cpp.obj
+.PHONY : algorithm/dijkstra2/dijkstra.cpp.obj
 
-algorithm/matrix_chain_order2/matrix_chain_order2.i: algorithm/matrix_chain_order2/matrix_chain_order2.c.i
-.PHONY : algorithm/matrix_chain_order2/matrix_chain_order2.i
+algorithm/dijkstra2/dijkstra.i: algorithm/dijkstra2/dijkstra.cpp.i
+.PHONY : algorithm/dijkstra2/dijkstra.i
 
 # target to preprocess a source file
-algorithm/matrix_chain_order2/matrix_chain_order2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\matrix_chain_order2.dir\build.make CMakeFiles/matrix_chain_order2.dir/algorithm/matrix_chain_order2/matrix_chain_order2.c.i
-.PHONY : algorithm/matrix_chain_order2/matrix_chain_order2.c.i
+algorithm/dijkstra2/dijkstra.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dijkstra2.dir\build.make CMakeFiles/dijkstra2.dir/algorithm/dijkstra2/dijkstra.cpp.i
+.PHONY : algorithm/dijkstra2/dijkstra.cpp.i
 
-algorithm/matrix_chain_order2/matrix_chain_order2.s: algorithm/matrix_chain_order2/matrix_chain_order2.c.s
-.PHONY : algorithm/matrix_chain_order2/matrix_chain_order2.s
+algorithm/dijkstra2/dijkstra.s: algorithm/dijkstra2/dijkstra.cpp.s
+.PHONY : algorithm/dijkstra2/dijkstra.s
 
 # target to generate assembly for a file
-algorithm/matrix_chain_order2/matrix_chain_order2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\matrix_chain_order2.dir\build.make CMakeFiles/matrix_chain_order2.dir/algorithm/matrix_chain_order2/matrix_chain_order2.c.s
-.PHONY : algorithm/matrix_chain_order2/matrix_chain_order2.c.s
+algorithm/dijkstra2/dijkstra.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dijkstra2.dir\build.make CMakeFiles/dijkstra2.dir/algorithm/dijkstra2/dijkstra.cpp.s
+.PHONY : algorithm/dijkstra2/dijkstra.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... matrix_chain_order2
-	@echo ... algorithm/matrix_chain_order2/matrix_chain_order2.obj
-	@echo ... algorithm/matrix_chain_order2/matrix_chain_order2.i
-	@echo ... algorithm/matrix_chain_order2/matrix_chain_order2.s
+	@echo ... dijkstra2
+	@echo ... algorithm/dijkstra2/dijkstra.obj
+	@echo ... algorithm/dijkstra2/dijkstra.i
+	@echo ... algorithm/dijkstra2/dijkstra.s
 .PHONY : help
 
 
